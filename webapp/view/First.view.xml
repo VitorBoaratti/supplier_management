@@ -1,0 +1,43 @@
+<mvc:View controllerName="fornecedores.mvcapp.controller.First" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page title="Supplier Master">
+		<content>
+			
+			<Table id="suppliers" items="{/Suppliers}" class="sapUiResponsiveMargin" width="auto">
+				<headerToolbar>
+					<Toolbar>
+						<Label text="Number of Business Partner : 4"/>
+						<ToolbarSpacer/>
+						<SearchField width="50%" search=".onFiltersuppliers"/>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column>
+						<header><Text text="Business Partner ID"/></header>
+					</Column>
+					<Column>
+						<header><Text text="Business Partner Name"/>
+						</header>
+					</Column>
+					<Column>
+						<header><Text text="Postal Code"/>
+						</header>
+					</Column>
+					<Column>
+						<header><Text text="Country"/>
+						</header>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Navigation" press="onListItemPress">
+						<cells>
+							<ObjectIdentifier text="{ID}"/>
+							<ObjectIdentifier text="{Name}"/>
+							<ObjectIdentifier text="{Address/ZipCode}"/>
+							<ObjectIdentifier text="{Address/Country}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+	</Page>
+</mvc:View>

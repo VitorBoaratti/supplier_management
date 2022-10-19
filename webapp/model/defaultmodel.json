@@ -1,0 +1,70 @@
+{
+	"CountSweets": "4",
+	"Suppliers": [{
+		"ID": 0,
+		"Name": "Materias Produtivos SA",
+		"Address": {
+			"Street": "Rua das Palmeiras",
+			"City": "São Paulo",
+			"State": "São Paulo",
+			"ZipCode": "500000",
+			"Country": "Brazil"
+		},
+		"additional Info": {
+			"type-material" : "Electronic Material",
+			"liquidation-date":"in 30 days",
+			"Account group": "P - Production",
+			"cpnj" : "47.178.644/0001-38"
+		}
+	}, {
+		"ID": "1",
+		"Name": "Material de Escritorio Ltda",
+		"Address": {
+			"Street": "Pomodoro",
+			"City": "Genova",
+			"State": "Liguria",
+			"ZipCode": "615811",
+			"Country": "Italia"
+		},
+		"additional Info": {
+			"type-material" : "Office Material",
+			"liquidation-date":"in 15 days",
+			"Account group": "A - Administrative",
+			"cpnj" : "09.313.587/0001-63"
+		}
+	},
+	{
+		"ID": "2",
+		"Name": "Ferramental Ind. Ltda",
+		"Address": {
+			"Street": "Rue des Pincevents",
+			"City": "Paris",
+			"State": "Éragny",
+			"ZipCode": "728622",
+			"Country": "França"
+		},
+		"additional Info": {
+			"type-material" : "Tools",
+			"liquidation-date":"in 45 days",
+			"Account group": "P - Production",
+			"cpnj" : "22.721.102/0001-39"
+		}
+	},
+	{
+		"ID": "3",
+		"Name": "Companhia do Vidro",
+		"Address": {
+			"Street": "Bhavanipuram",
+			"City": "Vijayawada",
+			"State": "Andhra Pradesh",
+			"ZipCode": "1483933",
+			"Country": "India"
+		},
+		"additional Info": {
+			"type-material" : "Material",
+			"liquidation-date":"in 10 days",
+			"Account group": "P - Production",
+			"cpnj" : "65.050.417/0001-04"
+		}
+	}]
+}

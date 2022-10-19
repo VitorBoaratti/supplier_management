@@ -1,0 +1,44 @@
+<mvc:View controllerName="fornecedores.mvcapp.controller.second" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+	<Page navButtonPress="onNavPress" showNavButton="true" title="Supplier Details">
+		<content>
+			<ObjectHeader title="{Name}" number="CNPJ: {additional Info/cpnj}">
+				<attributes>
+					<ObjectAttribute text="{Address/Country}"/>
+				</attributes>
+			</ObjectHeader>
+				<f:SimpleForm layout="ResponsiveGridLayout" title="Basic Details" labelSpanL="2" emptySpanL="5" class="sapUiLargeMargin">
+				<f:content>
+					<Label text="Name"></Label>
+					<Input value="{Name}"></Input>
+					<Label text="ID"></Label>
+					<Input value="{ID}"></Input>
+					<Label text="Postal Code"></Label>
+					<Input value="{Address/ZipCode}"></Input>
+					<Label text="Street"></Label>
+					<Input value="{Address/Street}"></Input>
+					<Label text="City"></Label>
+					<Input value="{Address/City}"></Input>
+					<Label text="Country"></Label>
+					<Input value="{Address/Country}"></Input>
+				</f:content>
+			</f:SimpleForm>
+				<f:SimpleForm layout="ResponsiveGridLayout" title="Additional Info" labelSpanL="2" emptySpanL="5" class="sapUiLargeMargin">
+				<f:content>
+					<Label text="Material Type"></Label>
+					<Input value="{additional Info/type-material}"></Input>
+					<Label text="Liquidation Date"></Label>
+					<Input value="{additional Info/liquidation-date}"></Input>
+					<Label text="Account group"></Label>
+					<Input value="{additional Info/Account group}"></Input>
+				</f:content>
+			</f:SimpleForm>
+		</content>
+			<footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Button text="Save" press="onSavePress"/>
+				<Button text="Cancel" press="onCancelPress" />
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>
